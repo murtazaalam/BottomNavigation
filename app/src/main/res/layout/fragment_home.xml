@@ -4,15 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
-    android:background="@color/colorPrimaryDark">
-    <TextView
-        android:layout_width="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp">
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Layout"
-        android:layout_centerInParent="true"
         android:textColor="#fff"
-        android:textSize="20dp">
+        android:hint="Enter name"
+        android:textColorHint="#fff"
+        android:id="@+id/name">
 
-    </TextView>
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:layout_below="@+id/name"
+        android:id="@+id/send">
+
+    </Button>
 
 </RelativeLayout>
